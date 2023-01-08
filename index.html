@@ -34,7 +34,7 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <form action="submit" id="rate-form">
+        <form action="#" id="rate-form">
           <fieldset class="form-fieldset">
             <legend hidden>rating</legend>
 
@@ -51,6 +51,7 @@
 
             <label class="rating-lbl" for="rating-2"
               ><input
+                required
                 class="rating-input"
                 type="radio"
                 id="rating-2"
@@ -89,7 +90,12 @@
               /><span class="rate-lbl-style">5</span></label
             >
           </fieldset>
-          <button type="submit" id="submit-btn" class="submit-btn">
+          <button
+            type="submit"
+            id="submit-btn"
+            class="submit-btn"
+            aria-label="submit"
+          >
             Submit
           </button>
         </form>
@@ -107,7 +113,7 @@
         <div class="rating-selected">
           <h2 class="rate-selected">
             You selected
-            <!-- Add rating here -->
+            <span id="rate-selected"></span>
             out of 5
           </h2>
         </div>
@@ -121,5 +127,6 @@
       </div>
       <!-- Thank you state end -->
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

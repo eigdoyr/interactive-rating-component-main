@@ -67,15 +67,19 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  background: linear-gradient(0deg, hsl(216deg 25% 7%), hsl(216deg 17% 3%));
+  background: linear-gradient(1deg, hsl(213deg 30% 15%), hsl(0deg 0% 0%));
+}
+
+main {
+  padding: 1.25rem;
 }
 
 .card {
   background-color: var(--dark-blue);
   padding: 1.25rem;
-  max-width: 22rem;
-  height: 23.8062rem;
-  background: linear-gradient(10deg, hsl(216, 76%, 2%), hsl(213, 33%, 10%));
+  max-width: 25.875rem;
+  max-height: 25.9rem;
+  background: linear-gradient(136deg, hsl(216deg 59% 6%), hsl(213, 33%, 10%));
   border-radius: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   border: 0.1px solid var(--very-dark-blue);
@@ -104,7 +108,7 @@ body {
 
 .submit-btn {
   background: linear-gradient(10deg, hsl(216, 76%, 2%), hsl(213, 33%, 10%));
-  color: var(--white);
+  color: var(--orange);
   text-transform: uppercase;
   align-items: center;
   padding: 0.75rem;
@@ -121,6 +125,8 @@ body {
   background: var(--orange);
   color: var(--white);
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .form-fieldset {
@@ -154,6 +160,7 @@ body {
   color: var(--orange);
   cursor: pointer;
   border: var(--dark-blue) 1px solid;
+  transition: all 0.4s ease-in-out;
 }
 
 input[type="radio"]:checked + .rate-lbl-style {
